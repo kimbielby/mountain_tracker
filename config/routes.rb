@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+
+  resources :mountains
+  resources :classifications
+  resources :locations
+
+
+  get '/' => 'mountains#landing_page'
+
+  get '/trekked' => 'mountains#trekked', as: 'trekked'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
