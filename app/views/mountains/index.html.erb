@@ -1,1 +1,6 @@
-List of all mountains, both Trekked and un Trekked 
+List of all mountains, both Trekked and un Trekked
+<% @mountains.each do |mountain| %>
+  <p> Mountain Name: <%= mountain.name %> </p>
+  <p> Mountain Range: <%= mountain.mountain_range %> </p>
+  <p> Height: <%= mountain.height %> </p>
+<% end %>

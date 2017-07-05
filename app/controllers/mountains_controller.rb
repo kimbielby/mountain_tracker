@@ -1,6 +1,7 @@
 class MountainsController < ApplicationController
 
   def index
+    @mountains = Mountain.all 
   end
 
 
@@ -16,7 +17,7 @@ class MountainsController < ApplicationController
   end
 
   def show
-    
+
   end
 
 end
